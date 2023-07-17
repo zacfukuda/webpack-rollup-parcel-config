@@ -16,10 +16,8 @@ export default {
       preventAssignment: true,
     }),
     typescript(),
-    babel({
-      babelHelpers: 'bundled'
-    }),
+    babel({babelHelpers: 'bundled'}),
     resolve(),
-    commonjs({extensions: ['tsx', 'ts']}),
+    commonjs(),
   ],
 };
